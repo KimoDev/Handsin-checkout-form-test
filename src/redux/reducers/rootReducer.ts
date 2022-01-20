@@ -1,8 +1,14 @@
-import { combineReducers } from "redux";
-import formReducer from "./formReducer";
-import stepReducer from "./stepReducer";
+// import { combineReducers } from "redux";
 
 
-const rootReducer = combineReducers({formReducer, stepReducer})
+const initialState = {}
+
+const rootReducer = (state = initialState, action: any) => {
+  switch(action.type) {
+
+    default:
+      return state;
+  }
+}
 
 export default rootReducer;
